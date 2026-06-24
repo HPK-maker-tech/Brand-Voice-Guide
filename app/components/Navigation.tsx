@@ -26,9 +26,9 @@ export default function Navigation() {
             <Image
               src="/van-icon.png"
               alt="Ruff Cuts Van"
-              width={72}
-              height={72}
-              className="w-16 h-16 object-contain"
+              width={96}
+              height={96}
+              className="w-24 h-24 object-contain"
             />
           </Link>
           <div className="hidden md:flex gap-8 text-sm font-medium">
