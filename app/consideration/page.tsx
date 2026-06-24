@@ -12,8 +12,8 @@ export default function ConsiderationPage() {
       {/* Header Image */}
       <div className="relative w-full h-80 bg-slate-200">
         <Image
-          src="https://images.unsplash.com/photo-1629555256545-e29db1b05f86?w=1200&h=400&fit=crop"
-          alt="Thinking dog"
+          src="https://images.unsplash.com/photo-1591429025698-be9c0e30ce28?w=1200&h=400&fit=crop"
+          alt="Curious dog close up"
           fill
           className="object-cover"
         />
