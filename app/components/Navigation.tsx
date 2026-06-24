@@ -1,6 +1,7 @@
 'use client';
 
 import Link from "next/link";
+import Image from "next/image";
 import Logo from "./Logo";
 
 export default function Navigation() {
@@ -9,38 +10,14 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition">
-            {/* Dog Icon - v2 */}
-            <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-              {/* Head */}
-              <circle cx="28" cy="28" r="14" fill="#A0522D" />
-
-              {/* Left ear - long and pointed */}
-              <ellipse cx="14" cy="10" rx="5" ry="10" fill="#8B4513" transform="rotate(-25 14 10)" />
-
-              {/* Right ear - long and pointed */}
-              <ellipse cx="42" cy="10" rx="5" ry="10" fill="#8B4513" transform="rotate(25 42 10)" />
-
-              {/* Snout */}
-              <ellipse cx="28" cy="32" rx="8" ry="7" fill="#D2B48C" />
-
-              {/* Nose */}
-              <ellipse cx="28" cy="30" rx="4" ry="3.5" fill="#000" />
-
-              {/* Mouth line */}
-              <path d="M 28 33 Q 28 36 26 37" stroke="#000" strokeWidth="1.5" fill="none" strokeLinecap="round" />
-              <path d="M 28 33 Q 28 36 30 37" stroke="#000" strokeWidth="1.5" fill="none" strokeLinecap="round" />
-
-              {/* Left eye */}
-              <circle cx="22" cy="24" r="2.5" fill="#000" />
-              <circle cx="23" cy="23" r="0.8" fill="#fff" />
-
-              {/* Right eye */}
-              <circle cx="34" cy="24" r="2.5" fill="#000" />
-              <circle cx="35" cy="23" r="0.8" fill="#fff" />
-
-              {/* Tongue */}
-              <ellipse cx="28" cy="40" rx="2.5" ry="2" fill="#FF69B4" />
-            </svg>
+            {/* Dog Icon */}
+            <Image
+              src="/dog-icon.png"
+              alt="Ruff Cuts Dog"
+              width={48}
+              height={48}
+              className="w-12 h-12"
+            />
 
             {/* Text */}
             <div className="text-2xl font-bold text-orange-700">Ruff Cuts</div>
