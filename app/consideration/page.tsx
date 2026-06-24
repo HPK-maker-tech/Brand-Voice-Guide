@@ -12,10 +12,10 @@ export default function ConsiderationPage() {
       {/* Header Image */}
       <div className="relative w-full h-80 bg-slate-200">
         <Image
-          src="https://images.unsplash.com/photo-1715033812966-12418510f9ab?w=1200&h=400&fit=crop"
-          alt="Dog looking down"
+          src="https://images.unsplash.com/photo-1564067886520-e1ff2767eb1a"
+          alt="Curious dog"
           fill
-          className="object-cover"
+          className="object-contain"
         />
       </div>
 
