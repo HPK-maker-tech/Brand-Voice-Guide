@@ -12,8 +12,8 @@ export default function VoicePage() {
       {/* Header Image */}
       <div className="relative w-full h-80 bg-slate-200">
         <Image
-          src="https://images.unsplash.com/photo-1765916187167-311aaf811fd9?w=1200&h=400&fit=crop"
-          alt="Van landscape"
+          src="https://images.unsplash.com/photo-1607699133453-2d94a49f7fd5?w=1200&h=400&fit=crop"
+          alt="Van on road"
           fill
           className="object-cover"
         />
