@@ -28,7 +28,7 @@ export default function Navigation() {
               alt="Ruff Cuts Van"
               width={48}
               height={48}
-              className="w-12 h-12"
+              className="w-12 h-12 object-contain"
             />
           </Link>
           <div className="hidden md:flex gap-8 text-sm font-medium">
