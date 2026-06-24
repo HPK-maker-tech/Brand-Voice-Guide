@@ -9,7 +9,7 @@ export default function Navigation() {
     <nav className="border-b border-slate-200 bg-white sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-1 hover:opacity-80 transition">
+          <Link href="/" className="flex items-center gap-0 hover:opacity-80 transition">
             {/* Dog Icon */}
             <Image
               src="/dog-icon.png"
