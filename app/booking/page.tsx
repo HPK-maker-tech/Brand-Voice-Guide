@@ -42,7 +42,7 @@ Ruff Cuts Team`;
       {/* Header Image */}
       <div className="relative w-full h-80 bg-slate-200">
         <Image
-          src="https://images.unsplash.com/photo-1537204696486-967f1b7198c8?w=1200&h=400&fit=crop"
+          src="https://images.unsplash.com/photo-1534361960057-19889db9621e?w=1200&h=400&fit=crop"
           alt="Happy dog"
           fill
           className="object-cover"
