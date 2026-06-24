@@ -1,12 +1,23 @@
 'use client';
 
 import Link from "next/link";
+import Image from "next/image";
 import Navigation from "../components/Navigation";
 
 export default function ServicePage() {
   return (
     <main className="min-h-screen bg-slate-50">
       <Navigation />
+
+      {/* Header Image */}
+      <div className="relative w-full h-80 bg-slate-200">
+        <Image
+          src="https://images.unsplash.com/photo-1471560090527-d1af5e4e6eb6?w=1200&h=400&fit=crop"
+          alt="Relaxed dog"
+          fill
+          className="object-cover"
+        />
+      </div>
 
       <div className="max-w-4xl mx-auto px-6 py-16">
         <h1 className="text-4xl font-bold text-slate-900 mb-4">Service</h1>

@@ -1,12 +1,23 @@
 'use client';
 
 import Link from "next/link";
+import Image from "next/image";
 import Navigation from "../components/Navigation";
 
 export default function ConsiderationPage() {
   return (
     <main className="min-h-screen bg-slate-50">
       <Navigation />
+
+      {/* Header Image */}
+      <div className="relative w-full h-80 bg-slate-200">
+        <Image
+          src="https://images.unsplash.com/photo-1629555256545-e29db1b05f86?w=1200&h=400&fit=crop"
+          alt="Thinking dog"
+          fill
+          className="object-cover"
+        />
+      </div>
 
       <div className="max-w-4xl mx-auto px-6 py-16">
         <h1 className="text-4xl font-bold text-slate-900 mb-4">Consideration</h1>
