@@ -23,13 +23,13 @@ export default function Navigation() {
             <div className="text-2xl font-bold text-orange-700">Ruff Cuts</div>
 
             {/* Van Icon */}
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="3" y="12" width="22" height="10" rx="1" fill="#D4A017" stroke="#A0620B" strokeWidth="1" />
-              <path d="M 6 12 L 8 6 L 20 6 L 22 12" fill="#B8860B" stroke="#A0620B" strokeWidth="1" />
-              <rect x="10" y="7" width="8" height="5" fill="#87CEEB" stroke="#A0620B" strokeWidth="0.5" />
-              <circle cx="8" cy="22" r="2" fill="#333" stroke="#000" strokeWidth="0.5" />
-              <circle cx="20" cy="22" r="2" fill="#333" stroke="#000" strokeWidth="0.5" />
-            </svg>
+            <Image
+              src="/van-icon.png"
+              alt="Ruff Cuts Van"
+              width={48}
+              height={48}
+              className="w-12 h-12"
+            />
           </Link>
           <div className="hidden md:flex gap-8 text-sm font-medium">
             <Link href="/" className="text-slate-700 hover:text-orange-700">Home</Link>
