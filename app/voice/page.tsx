@@ -8,6 +8,16 @@ export default function VoicePage() {
     <main className="min-h-screen bg-slate-50">
       <Navigation />
 
+      {/* Header Image */}
+      <div className="relative w-full h-80 bg-slate-200">
+        <Image
+          src="https://images.unsplash.com/photo-1681208300459-f6076cdc8e13?w=1200&h=400&fit=crop"
+          alt="Van on road"
+          fill
+          className="object-cover"
+        />
+      </div>
+
       <div className="max-w-4xl mx-auto px-6 py-16">
         <h1 className="text-4xl font-bold text-slate-900 mb-8">Voice – Grundprinzipien</h1>
 
