@@ -1,39 +1,47 @@
 export default function Logo() {
   return (
-    <svg
-      width="40"
-      height="40"
-      viewBox="0 0 40 40"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      className="inline-block"
-    >
-      {/* Van body */}
-      <rect x="4" y="18" width="32" height="14" rx="2" fill="#B8860B" stroke="#A0620B" strokeWidth="1.5" />
+    <div className="flex items-center gap-2">
+      {/* Dog Icon */}
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        {/* Dog head */}
+        <circle cx="14" cy="14" r="8" fill="#8B4513" />
 
-      {/* Van top/cabin */}
-      <path d="M 8 18 Q 8 10 16 10 L 32 10 Q 32 12 28 14 L 8 14 Z" fill="#D4A017" stroke="#A0620B" strokeWidth="1.5" />
+        {/* Left ear */}
+        <ellipse cx="8" cy="8" rx="3" ry="5" fill="#8B4513" />
 
-      {/* Window */}
-      <rect x="18" y="11" width="10" height="8" rx="1" fill="#E8F4F8" stroke="#A0620B" strokeWidth="1" />
+        {/* Right ear */}
+        <ellipse cx="20" cy="8" rx="3" ry="5" fill="#8B4513" />
 
-      {/* Dog head in window */}
-      <circle cx="23" cy="14" r="2.5" fill="#8B4513" />
+        {/* Snout */}
+        <ellipse cx="14" cy="16" rx="3.5" ry="3" fill="#A0522D" />
 
-      {/* Dog ears */}
-      <ellipse cx="20.5" cy="12.5" rx="1.2" ry="1.8" fill="#8B4513" />
-      <ellipse cx="25.5" cy="12.5" rx="1.2" ry="1.8" fill="#8B4513" />
+        {/* Left eye */}
+        <circle cx="11" cy="12" r="1.2" fill="#000" />
 
-      {/* Dog snout */}
-      <ellipse cx="23" cy="15.5" rx="1.5" ry="1" fill="#A0522D" />
+        {/* Right eye */}
+        <circle cx="17" cy="12" r="1.2" fill="#000" />
 
-      {/* Dog eyes */}
-      <circle cx="21.5" cy="13.5" r="0.4" fill="#000" />
-      <circle cx="24.5" cy="13.5" r="0.4" fill="#000" />
+        {/* Nose */}
+        <circle cx="14" cy="16" r="0.8" fill="#000" />
+      </svg>
 
-      {/* Wheels */}
-      <circle cx="10" cy="32" r="2" fill="#333" stroke="#000" strokeWidth="0.5" />
-      <circle cx="30" cy="32" r="2" fill="#333" stroke="#000" strokeWidth="0.5" />
-    </svg>
+      {/* Van Icon */}
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        {/* Van body */}
+        <rect x="3" y="12" width="22" height="10" rx="1" fill="#D4A017" stroke="#A0620B" strokeWidth="1" />
+
+        {/* Van cabin/top */}
+        <path d="M 6 12 L 8 6 L 20 6 L 22 12" fill="#B8860B" stroke="#A0620B" strokeWidth="1" />
+
+        {/* Window */}
+        <rect x="10" y="7" width="8" height="5" fill="#87CEEB" stroke="#A0620B" strokeWidth="0.5" />
+
+        {/* Left wheel */}
+        <circle cx="8" cy="22" r="2" fill="#333" stroke="#000" strokeWidth="0.5" />
+
+        {/* Right wheel */}
+        <circle cx="20" cy="22" r="2" fill="#333" stroke="#000" strokeWidth="0.5" />
+      </svg>
+    </div>
   );
 }
