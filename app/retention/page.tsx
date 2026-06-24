@@ -12,8 +12,8 @@ export default function RetentionPage() {
       {/* Header Image */}
       <div className="relative w-full h-80 bg-slate-200">
         <Image
-          src="https://images.unsplash.com/photo-1543164888-462c8603cbd9?w=1200&h=400&fit=crop"
-          alt="Waiting dog"
+          src="https://images.unsplash.com/photo-1603724819619-a0858e51e762?w=1200&h=400&fit=crop"
+          alt="Dog at window"
           fill
           className="object-cover"
         />
