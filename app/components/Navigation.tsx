@@ -14,9 +14,9 @@ export default function Navigation() {
             <Image
               src="/dog-icon.png"
               alt="Ruff Cuts Dog"
-              width={48}
-              height={48}
-              className="w-12 h-12"
+              width={72}
+              height={72}
+              className="w-16 h-16"
             />
 
             {/* Text */}
@@ -26,9 +26,9 @@ export default function Navigation() {
             <Image
               src="/van-icon.png"
               alt="Ruff Cuts Van"
-              width={48}
-              height={48}
-              className="w-12 h-12 object-contain"
+              width={72}
+              height={72}
+              className="w-16 h-16 object-contain"
             />
           </Link>
           <div className="hidden md:flex gap-8 text-sm font-medium">
