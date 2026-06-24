@@ -15,7 +15,7 @@ export default function ServicePage() {
           src="https://images.unsplash.com/photo-1601880348117-25c1127a95df?w=1200&h=400&fit=crop"
           alt="Calm sleeping dog"
           fill
-          className="object-cover"
+          className="object-cover object-top"
         />
       </div>
 
