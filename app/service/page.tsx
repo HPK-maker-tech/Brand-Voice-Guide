@@ -12,8 +12,8 @@ export default function ServicePage() {
       {/* Header Image */}
       <div className="relative w-full h-80 bg-slate-200">
         <Image
-          src="https://images.unsplash.com/photo-1611173622933-91942d394b04?w=1200&h=400&fit=crop"
-          alt="Dog being groomed"
+          src="https://images.unsplash.com/photo-1597595735781-6a57fb8e3e3d?w=1200&h=400&fit=crop"
+          alt="Dog being washed"
           fill
           className="object-cover"
         />
