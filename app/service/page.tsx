@@ -83,7 +83,7 @@ Wir kommen gerade raus.`;
             <div>
               <div className="relative w-full h-64 bg-slate-200 rounded overflow-hidden mb-3">
                 <Image
-                  src="/dog-after.jpg"
+                  src="dog-after.jpg"
                   alt="Before grooming"
                   width={500}
                   height={400}
@@ -95,7 +95,7 @@ Wir kommen gerade raus.`;
             <div>
               <div className="relative w-full h-64 bg-slate-200 rounded overflow-hidden mb-3">
                 <Image
-                  src="/dog-before.jpg"
+                  src="dog-before.jpg"
                   alt="After grooming"
                   width={500}
                   height={400}
