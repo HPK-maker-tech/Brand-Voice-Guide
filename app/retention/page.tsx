@@ -114,7 +114,9 @@ Sag uns Bescheid!`}
                 "Das ist seltsam, normalerweise sind unsere Groomer sehr professionell. Vielleicht war dein Hund einfach nervös? Es gibt verschiedene Gründe, warum ein Hund angespannt sein kann..."
               </p>
             </div>
+          </div>
 
+          <div className="bg-white p-8 rounded-lg border border-slate-200">
             <h3 className="text-2xl font-bold text-slate-900 mb-6">Zusammenfassung</h3>
             <div className="grid grid-cols-2 gap-8">
               <div>

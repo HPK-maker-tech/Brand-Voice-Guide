@@ -48,9 +48,10 @@ Wir kommen gerade raus.`}
           </div>
         </section>
 
-        <section className="bg-white p-8 rounded-lg border border-slate-200 mb-8">
-          <h2 className="text-2xl font-bold text-slate-900 mb-4">Fotos & Vorher-Nachher</h2>
-          <p className="text-slate-600 mb-6"><strong>Tone:</strong> Fröhlich, aber nicht übertrieben. Zeige das Ergebnis, nicht dein Gefühl.</p>
+        <section className="space-y-8 mb-16">
+          <div>
+            <h2 className="text-2xl font-bold text-slate-900 mb-4">Fotos & Vorher-Nachher</h2>
+            <p className="text-slate-600 mb-6"><strong>Tone:</strong> Fröhlich, aber nicht übertrieben. Zeige das Ergebnis, nicht dein Gefühl.</p>
 
           {/* Before/After Images */}
           <div className="grid grid-cols-2 gap-6 mb-8">
@@ -115,6 +116,7 @@ Wir kommen gerade raus.`}
                 </ul>
               </div>
             </div>
+          </div>
           </div>
         </section>
 
