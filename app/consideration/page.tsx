@@ -37,11 +37,25 @@ export default function ConsiderationPage() {
           </ul>
 
           <h3 className="font-bold text-slate-900 mb-3">Don'ts</h3>
-          <ul className="space-y-2 text-slate-600">
+          <ul className="space-y-2 text-slate-600 mb-6">
             <li>✗ Keine langen, schwammigen Antworten</li>
             <li>✗ Keine technischen Begriffe ohne Erklärung</li>
             <li>✗ Keine verzögerten Antworten</li>
           </ul>
+
+          <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded mb-6">
+            <p className="font-bold text-green-900 mb-3">✓ Gutes Beispiel:</p>
+            <p className="text-slate-700 font-mono text-sm italic">
+              "Hi Sarah, für dein Labradoodle rechnen wir mit ca. 2,5 Stunden. Die genaue Zeit sehen wir, wenn wir ihn sehen – kommt auch auf die Felllänge an. Möchtest du Donnerstag oder Freitag?"
+            </p>
+          </div>
+
+          <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded">
+            <p className="font-bold text-red-900 mb-3">✗ Nicht so gut:</p>
+            <p className="text-slate-700 font-mono text-sm italic">
+              "Danke für deine Anfrage! Das ist eine großartige Frage. Es gibt viele Faktoren, die die Dauer beeinflussen, wie z.B. die Rasse, das Fell, die aktuellen Bedingungen... Wir kontaktieren dich bald mit mehr Infos!"
+            </p>
+          </div>
         </section>
 
         <div className="flex gap-4 justify-between mt-12">

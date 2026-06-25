@@ -74,8 +74,27 @@ Ruff Cuts Team`;
 
           <div className="bg-white p-8 rounded-lg border border-slate-200">
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Termine und Ablauf erklären</h2>
-            <p className="text-slate-600 mb-6">Erkläre dem Kunden, wie der Prozess funktioniert.</p>
-            <p className="text-slate-600">Details folgen...</p>
+            <p className="text-slate-600 mb-6"><strong>Tone:</strong> Klar, praktisch, beruhigend.</p>
+
+            <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
+              <p className="text-sm font-bold text-blue-900 mb-3">📋 Template (Email oder Telefon):</p>
+              <pre className="bg-white p-4 rounded mb-4 font-mono text-sm overflow-x-auto whitespace-pre-wrap">
+{`Das läuft bei uns ab:
+
+1. Wir schreiben dir 30 Min. vorher
+2. Wir fahren vor dein Haus (Van mit Ruff Cuts Logo)
+3. Wir groomen deinen Hund im Van (ca. [Zeit])
+4. Dein Hund kommt frisch und sauber raus
+5. Wir schreiben dir "Fertig!" – du holst den Hund ab
+   oder wir bringen ihn rein
+6. Du bezahlst, wir fahren weiter
+
+Keine Wartezeit. Dein Hund bleibt in der gewohnten Umgebung.
+Keine Stress. Dein Tag läuft normal weiter.
+
+Fragen? Ruf uns an oder schreib zurück.`}
+              </pre>
+            </div>
           </div>
         </section>
 
