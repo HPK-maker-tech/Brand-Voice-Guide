@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: 'export',
-  basePath: '',
+  basePath: '/Brand-Voice-Guide',
   images: {
     unoptimized: true,
   },
