@@ -101,6 +101,7 @@ Wir kommen gerade raus.`}
                   <li>• Gute Lichtverhältnisse</li>
                   <li>• Der Hund sieht glücklich/entspannt aus</li>
                   <li>• Caption: kurz, "Vorher/Nachher – [Hundename]"</li>
+                  <li>• Authentizität zeigen – echte Ergebnisse</li>
                 </ul>
               </div>
 
@@ -109,6 +110,8 @@ Wir kommen gerade raus.`}
                 <ul className="space-y-2 text-slate-600">
                   <li>• Keine Tausend Emojis</li>
                   <li>• Keine gestellten Posen</li>
+                  <li>• Keine unrealistischen Filter</li>
+                  <li>• Keine zu langen oder komplexen Captions</li>
                 </ul>
               </div>
             </div>
