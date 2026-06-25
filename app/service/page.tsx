@@ -57,7 +57,7 @@ Wir kommen gerade raus.`}
             <div>
               <div className="relative w-full h-64 bg-slate-200 rounded overflow-hidden mb-3">
                 <Image
-                  src="https://images.unsplash.com/photo-1600079810694-b5f68066d53f?w=500&h=400&fit=crop"
+                  src="/dog-before.jpg"
                   alt="Before grooming"
                   width={500}
                   height={400}
@@ -69,7 +69,7 @@ Wir kommen gerade raus.`}
             <div>
               <div className="relative w-full h-64 bg-slate-200 rounded overflow-hidden mb-3">
                 <Image
-                  src="https://images.unsplash.com/photo-1633722716947-a7f3f90a1fbf?w=500&h=400&fit=crop"
+                  src="/dog-after.jpg"
                   alt="After grooming"
                   width={500}
                   height={400}
