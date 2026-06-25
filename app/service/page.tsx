@@ -21,7 +21,7 @@ export default function ServicePage() {
 
       <div className="max-w-4xl mx-auto px-6 py-16">
         <h1 className="text-4xl font-bold text-slate-900 mb-4">Service</h1>
-        <p className="text-xl text-slate-600 mb-12">Während der Grooming – Status-Updates und Fotos</p>
+        <p className="text-xl text-slate-600 mb-12">Während der Fellpflege – Status-Updates und Fotos</p>
 
         <section className="bg-white p-8 rounded-lg border border-slate-200 mb-8">
           <h2 className="text-2xl font-bold text-slate-900 mb-4">Status-Updates</h2>
