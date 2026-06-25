@@ -38,21 +38,25 @@ export default function AwarenessPage() {
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Social Media Posts / Anzeigen</h2>
             <p className="text-slate-600 mb-6"><strong>Tone:</strong> Informativ, freundlich, klar – aber nicht zu locker.</p>
 
-            <div className="bg-white p-8 rounded-lg border border-slate-200 mb-8">
-              <h3 className="font-bold text-slate-900 mb-4">Do's</h3>
-              <ul className="space-y-2 text-slate-600 mb-6">
-                <li>✓ Zeige echte Hunde, echte Vorher-Nachher-Ergebnisse</li>
-                <li>✓ Erkläre den Vorteil (kein Stress für den Hund)</li>
-                <li>✓ Sei kurz und prägnant</li>
-                <li>✓ Nutze Fragen, um Engagement zu fördern</li>
-              </ul>
+            <div className="bg-white p-8 rounded-lg border border-slate-200 mb-8 grid grid-cols-2 gap-8">
+              <div>
+                <h3 className="font-bold text-green-700 mb-4">✓ Do's</h3>
+                <ul className="space-y-2 text-slate-600">
+                  <li>• Zeige echte Hunde, echte Vorher-Nachher-Ergebnisse</li>
+                  <li>• Erkläre den Vorteil (kein Stress für den Hund)</li>
+                  <li>• Sei kurz und prägnant</li>
+                  <li>• Nutze Fragen, um Engagement zu fördern</li>
+                </ul>
+              </div>
 
-              <h3 className="font-bold text-slate-900 mb-4">Don'ts</h3>
-              <ul className="space-y-2 text-slate-600">
-                <li>✗ Keine Tier-Babytalk-Wörter</li>
-                <li>✗ Keine Emojis übertrieben nutzen</li>
-                <li>✗ Keine 10-Zeilen-Captions</li>
-              </ul>
+              <div>
+                <h3 className="font-bold text-red-700 mb-4">✗ Don'ts</h3>
+                <ul className="space-y-2 text-slate-600">
+                  <li>• Keine Tier-Babytalk-Wörter</li>
+                  <li>• Keine Emojis übertrieben nutzen</li>
+                  <li>• Keine 10-Zeilen-Captions</li>
+                </ul>
+              </div>
             </div>
 
             {/* Good Example */}
