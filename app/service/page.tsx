@@ -2,9 +2,26 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 import Navigation from "../components/Navigation";
 
 export default function ServicePage() {
+  const [copied, setCopied] = useState<string | null>(null);
+
+  const copyToClipboard = (text: string, id: string) => {
+    navigator.clipboard.writeText(text);
+    setCopied(id);
+    setTimeout(() => setCopied(null), 2000);
+  };
+
+  const startTemplate = `Hi [Name],
+wir sind in ca. 10 Min. da und starten mit [Hundename].
+Bis dann!`;
+
+  const finishTemplate = `Hi [Name],
+[Hundename] ist fertig! Er/Sie sieht super aus.
+Wir kommen gerade raus.`;
+
   return (
     <main className="min-h-screen bg-slate-50">
       <Navigation />
@@ -30,20 +47,28 @@ export default function ServicePage() {
 
           <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded mb-6">
             <p className="text-sm font-bold text-blue-900 mb-3">📱 Template (Start):</p>
-            <pre className="bg-white p-4 rounded font-mono text-sm overflow-x-auto whitespace-pre-wrap">
-{`Hi [Name],
-wir sind in ca. 10 Min. da und starten mit [Hundename].
-Bis dann!`}
+            <pre className="bg-white p-4 rounded mb-4 font-mono text-sm overflow-x-auto whitespace-pre-wrap">
+{startTemplate}
             </pre>
+            <button
+              onClick={() => copyToClipboard(startTemplate, "start-template")}
+              className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+            >
+              {copied === "start-template" ? "✓ Kopiert!" : "Template kopieren"}
+            </button>
           </div>
 
           <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
             <p className="text-sm font-bold text-blue-900 mb-3">📱 Template (Fertig):</p>
-            <pre className="bg-white p-4 rounded font-mono text-sm overflow-x-auto whitespace-pre-wrap">
-{`Hi [Name],
-[Hundename] ist fertig! Er/Sie sieht super aus.
-Wir kommen gerade raus.`}
+            <pre className="bg-white p-4 rounded mb-4 font-mono text-sm overflow-x-auto whitespace-pre-wrap">
+{finishTemplate}
             </pre>
+            <button
+              onClick={() => copyToClipboard(finishTemplate, "finish-template")}
+              className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+            >
+              {copied === "finish-template" ? "✓ Kopiert!" : "Template kopieren"}
+            </button>
             <p className="text-sm text-slate-600 mt-4">💡 <strong>Aufmunterung:</strong> Experimentiere! Vielleicht ein Foto in der Mitte? Ein kleines Update ("wir föhnen gerade")? Schreib, was gut funktioniert.</p>
           </div>
         </section>
