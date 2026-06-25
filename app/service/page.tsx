@@ -75,7 +75,7 @@ Wir kommen gerade raus.`;
 
         <section className="space-y-8 mb-16">
           <div>
-            <h2 className="text-2xl font-bold text-slate-900 mb-4">Fotos & Vorher-Nachher</h2>
+            <h2 className="text-2xl font-bold text-slate-900 mb-4">Fotos Vorher-Nachher</h2>
             <p className="text-slate-600 mb-6"><strong>Tone:</strong> Fröhlich, aber nicht übertrieben. Zeige das Ergebnis, nicht dein Gefühl.</p>
 
           {/* Before/After Images */}
