@@ -12,7 +12,7 @@ export default function Navigation() {
           <Link href="/" className="flex items-center gap-0 hover:opacity-80 transition">
             {/* Dog Icon */}
             <Image
-              src="/dog-icon.png"
+              src="dog-icon.png"
               alt="Ruff Cuts Dog"
               width={72}
               height={72}
@@ -24,7 +24,7 @@ export default function Navigation() {
 
             {/* Van Icon */}
             <Image
-              src="/van-icon.png"
+              src="van-icon.png"
               alt="Ruff Cuts Van"
               width={96}
               height={96}
