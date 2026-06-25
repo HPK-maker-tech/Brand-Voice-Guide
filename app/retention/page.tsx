@@ -134,6 +134,7 @@ Sag uns Bescheid!`}
                     <li>• Sei nicht defensiv</li>
                     <li>• Verteidge dich nicht</li>
                     <li>• Mach keine leeren Versprechungen</li>
+                    <li>• Keine verzögerten Antworten</li>
                   </ul>
                 </div>
               </div>
