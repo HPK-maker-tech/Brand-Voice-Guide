@@ -100,6 +100,7 @@ export default function VoicePage() {
         </section>
 
         <section className="bg-white p-8 rounded-lg border border-slate-200">
+          <h2 className="text-2xl font-bold text-slate-900 mb-6">Zusammenfassung</h2>
           <div className="grid grid-cols-2 gap-8">
             <div>
               <h3 className="font-bold text-green-700 mb-3">✓ Do's</h3>
