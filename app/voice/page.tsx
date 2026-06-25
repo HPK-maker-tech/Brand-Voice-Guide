@@ -66,12 +66,28 @@ export default function VoicePage() {
 
           <div className="bg-white p-8 rounded-lg border border-slate-200">
             <h3 className="text-xl font-bold text-slate-900 mb-4">4. Effizienz respektieren</h3>
-            <p className="text-slate-600">Unsere Kunden sind busy. Wir sind prägnant, klar und respektieren ihre Zeit.</p>
+            <p className="text-slate-600 mb-4">Unsere Kunden sind busy. Wir sind prägnant, klar und respektieren ihre Zeit.</p>
+            <div className="bg-green-50 border-l-4 border-green-500 p-4 mb-4">
+              <p className="text-sm font-semibold text-green-900">✓ So klingt das:</p>
+              <p className="text-slate-700">"Termin bestätigt. Wir sind am Mittwoch um 10 Uhr da. Bis dann!"</p>
+            </div>
+            <div className="bg-red-50 border-l-4 border-red-500 p-4">
+              <p className="text-sm font-semibold text-red-900">✗ Nicht so:</p>
+              <p className="text-slate-700">"Hallo [Name], vielen Dank für deine Buchung! Wir freuen uns riesig, deinen wunderbaren Hund bald zu sehen. Es gibt so viel zu berichten über Fellpflege..."</p>
+            </div>
           </div>
 
           <div className="bg-white p-8 rounded-lg border border-slate-200">
             <h3 className="text-xl font-bold text-slate-900 mb-4">5. Eine Voice, verschiedene Töne</h3>
-            <p className="text-slate-600">Wir klingen auf Social Media lockerer als in einer Beschwerde-Antwort. Aber es ist immer noch Ruff Cuts.</p>
+            <p className="text-slate-600 mb-4">Wir klingen auf Social Media lockerer als in einer Beschwerde-Antwort. Aber es ist immer noch Ruff Cuts.</p>
+            <div className="bg-green-50 border-l-4 border-green-500 p-4 mb-4">
+              <p className="text-sm font-semibold text-green-900">✓ Social Media (lockerer):</p>
+              <p className="text-slate-700">"Bella sieht nach ihrer Grooming immer aus wie neu. Schau selbst!"</p>
+            </div>
+            <div className="bg-green-50 border-l-4 border-green-500 p-4">
+              <p className="text-sm font-semibold text-green-900">✓ Beschwerde (professioneller):</p>
+              <p className="text-slate-700">"Hi Sarah, danke dass du uns bescheid sagst. Wenn Max nicht ganz entspannt war, möchten wir das nächste Mal besser machen."</p>
+            </div>
           </div>
         </section>
 
