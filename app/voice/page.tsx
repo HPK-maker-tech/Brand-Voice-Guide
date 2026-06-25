@@ -20,7 +20,7 @@ export default function VoicePage() {
       </div>
 
       <div className="max-w-4xl mx-auto px-6 py-16">
-        <h1 className="text-4xl font-bold text-slate-900 mb-8">Voice – Grundprinzipien</h1>
+        <h1 className="text-4xl font-bold text-slate-900 mb-8">Voice-Prinzipien</h1>
 
         <section className="bg-white p-8 rounded-lg border border-slate-200 mb-8">
           <h2 className="text-2xl font-bold text-slate-900 mb-4">Wer wir sind</h2>
