@@ -38,7 +38,7 @@ export default function Home() {
           <p className="text-slate-600 text-sm">Wer Ruff Cuts ist – die Grundlage für alles, was wir schreiben.</p>
         </div>
         <div className="bg-white p-6 md:p-8 rounded-lg border border-slate-200">
-          <h3 className="text-lg font-bold text-slate-900 mb-3">6 Customer Journey Phasen</h3>
+          <h3 className="text-lg font-bold text-slate-900 mb-3">Sechs Customer Journey Phasen</h3>
           <p className="text-slate-600 text-sm">Jede Phase mit Do's, Don'ts, Beispielen und Templates.</p>
         </div>
         <div className="bg-white p-6 md:p-8 rounded-lg border border-slate-200">
