@@ -52,6 +52,9 @@ Ruff Cuts Team`;
       <div className="max-w-4xl mx-auto px-6 py-16">
         <h1 className="text-4xl font-bold text-slate-900 mb-4">Booking</h1>
         <p className="text-xl text-slate-600 mb-12">Kunde bucht einen Termin</p>
+        <p className="text-slate-600 mb-12 p-4 bg-blue-50 rounded border-l-4 border-blue-300">
+          💡 <strong>Hinweis:</strong> Die folgenden Templates sind Vorschläge. Experimentiere damit, finde heraus, was bei deinen Kunden gut funktioniert, und sag uns Bescheid – dann verbessern wir gemeinsam!
+        </p>
 
         <section className="space-y-8">
           <div className="bg-white p-8 rounded-lg border border-slate-200">
