@@ -87,23 +87,32 @@ Wir kommen gerade raus.`}
           </div>
 
           {/* Bad Caption Example */}
-          <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded mb-6">
+          <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded mb-8">
             <p className="font-bold text-red-900 mb-2">✗ Nicht so gut:</p>
             <p className="text-slate-700 text-sm italic">"OH MEIN GOTT!!! Die BESTE Grooming EVER!!! 🐶✨💅😍🎉 SCHAU DIR DAS AN!!! Unser MAGISCHES Team hat es WIEDER getan!!! 🌟🌟🌟"</p>
           </div>
 
-          <h3 className="font-bold text-slate-900 mb-3">Do's</h3>
-          <ul className="space-y-2 text-slate-600 mb-6">
-            <li>✓ Gute Lichtverhältnisse</li>
-            <li>✓ Der Hund sieht glücklich/entspannt aus</li>
-            <li>✓ Caption: kurz, "Vorher/Nachher – [Hundename]"</li>
-          </ul>
+          <div className="bg-white p-8 rounded-lg border border-slate-200">
+            <h3 className="text-2xl font-bold text-slate-900 mb-6">Zusammenfassung</h3>
+            <div className="grid grid-cols-2 gap-8">
+              <div>
+                <h4 className="font-bold text-green-700 mb-4">✓ Do's</h4>
+                <ul className="space-y-2 text-slate-600">
+                  <li>• Gute Lichtverhältnisse</li>
+                  <li>• Der Hund sieht glücklich/entspannt aus</li>
+                  <li>• Caption: kurz, "Vorher/Nachher – [Hundename]"</li>
+                </ul>
+              </div>
 
-          <h3 className="font-bold text-slate-900 mb-3">Don'ts</h3>
-          <ul className="space-y-2 text-slate-600">
-            <li>✗ Keine Tausend Emojis</li>
-            <li>✗ Keine gestellten Posen</li>
-          </ul>
+              <div>
+                <h4 className="font-bold text-red-700 mb-4">✗ Don'ts</h4>
+                <ul className="space-y-2 text-slate-600">
+                  <li>• Keine Tausend Emojis</li>
+                  <li>• Keine gestellten Posen</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </section>
 
         <div className="flex gap-4 justify-between mt-12">
