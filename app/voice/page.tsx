@@ -25,10 +25,10 @@ export default function VoicePage() {
         <section className="bg-white p-8 rounded-lg border border-slate-200 mb-8">
           <h2 className="text-2xl font-bold text-slate-900 mb-4">Wer wir sind</h2>
           <p className="text-lg text-slate-600 leading-relaxed">
-            Ruff Cuts ist der Freund, der zufällig ein Experte ist. Jemand, dem du vertraust, weil er oder sie offensichtlich weiss, was er tut – aber der diese Expertise nicht ausspielt. Premium ohne Snobismus. Professionell ohne Corporate-Sprech.
+            Ruff Cuts spricht wie jemand, der sein Handwerk versteht und das auch lebt – aber nicht darauf herumreitet. Wir geben dir hochwertige Arbeit, ohne dabei hochgestochen zu wirken. Unser Ton ist sachlich und kompetent, aber nie steif oder distanziert.
           </p>
           <p className="text-lg text-slate-600 leading-relaxed mt-4">
-            Wir sind die Menschen, die dein Hund gerne sieht.
+            In einer Welt voller Marketing-Blabla sind wir bodenständig. Vertrauenswürdig. Die Art von Menschen, die dein Hund erkennt und freiwillig in den Van steigt.
           </p>
         </section>
 
