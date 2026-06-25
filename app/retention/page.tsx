@@ -95,25 +95,11 @@ Sag uns Bescheid!`}
             </div>
           </div>
 
-          <div className="bg-white p-8 rounded-lg border border-slate-200">
+          <div>
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Beschwerde-Handling</h2>
             <p className="text-slate-600 mb-6"><strong>Tone:</strong> Ruhig, lösungsorientiert, professionell, empathisch.</p>
 
-            <h3 className="font-bold text-slate-900 mb-3">Do's</h3>
-            <ul className="space-y-2 text-slate-600 mb-6">
-              <li>✓ Höre aktiv zu (fasse zusammen, was der Kunde sagt)</li>
-              <li>✓ Entschuldige dich, wenn etwas nicht okay war</li>
-              <li>✓ Biete eine konkrete Lösung</li>
-              <li>✓ Folge auf – verspreche nicht und halte dann nicht</li>
-            </ul>
-
-            <h3 className="font-bold text-slate-900 mb-3">Don'ts</h3>
-            <ul className="space-y-2 text-slate-600 mb-6">
-              <li>✗ Sei nicht defensiv</li>
-              <li>✗ Verteidige dich nicht</li>
-              <li>✗ Mach keine leeren Versprechungen</li>
-            </ul>
-
+            {/* Good Example */}
             <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded mb-6">
               <p className="font-bold text-green-900 mb-3">✓ Gutes Beispiel:</p>
               <p className="text-slate-700 text-sm">
@@ -121,11 +107,36 @@ Sag uns Bescheid!`}
               </p>
             </div>
 
-            <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded">
+            {/* Bad Example */}
+            <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded mb-8">
               <p className="font-bold text-red-900 mb-3">✗ Nicht so gut:</p>
               <p className="text-slate-700 text-sm">
                 "Das ist seltsam, normalerweise sind unsere Groomer sehr professionell. Vielleicht war dein Hund einfach nervös? Es gibt verschiedene Gründe, warum ein Hund angespannt sein kann..."
               </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg border border-slate-200">
+              <h3 className="text-2xl font-bold text-slate-900 mb-6">Zusammenfassung</h3>
+              <div className="grid grid-cols-2 gap-8">
+                <div>
+                  <h4 className="font-bold text-green-700 mb-4">✓ Do's</h4>
+                  <ul className="space-y-2 text-slate-600">
+                    <li>• Höre aktiv zu (fasse zusammen, was der Kunde sagt)</li>
+                    <li>• Entschuldige dich, wenn etwas nicht okay war</li>
+                    <li>• Biete eine konkrete Lösung</li>
+                    <li>• Folge auf – verspreche nicht und halte dann nicht</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="font-bold text-red-700 mb-4">✗ Don'ts</h4>
+                  <ul className="space-y-2 text-slate-600">
+                    <li>• Sei nicht defensiv</li>
+                    <li>• Verteidge dich nicht</li>
+                    <li>• Mach keine leeren Versprechungen</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </section>
