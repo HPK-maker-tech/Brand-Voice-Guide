@@ -57,7 +57,7 @@ Wir kommen gerade raus.`}
             <div>
               <div className="relative w-full h-64 bg-slate-200 rounded overflow-hidden mb-3">
                 <Image
-                  src="https://images.unsplash.com/photo-1633722715463-d30628cff756?w=400&h=400&fit=crop"
+                  src="https://images.unsplash.com/photo-1587300411107-a56baf9201ff?w=400&h=400&fit=crop"
                   alt="Before grooming"
                   fill
                   className="object-cover"
@@ -68,7 +68,7 @@ Wir kommen gerade raus.`}
             <div>
               <div className="relative w-full h-64 bg-slate-200 rounded overflow-hidden mb-3">
                 <Image
-                  src="https://images.unsplash.com/photo-1570129477992-45a003cdd3d1?w=400&h=400&fit=crop"
+                  src="https://images.unsplash.com/photo-1633722715463-d30628cff756?w=400&h=400&fit=crop"
                   alt="After grooming"
                   fill
                   className="object-cover"
