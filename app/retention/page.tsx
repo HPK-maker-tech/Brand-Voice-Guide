@@ -41,7 +41,7 @@ Dein nächster Termin ist für [Datum/Zeit] frei – oder einen anderen Termin?`
 
       <div className="max-w-4xl mx-auto px-6 py-16">
         <h1 className="text-4xl font-bold text-slate-900 mb-4">Retention</h1>
-        <p className="text-xl text-slate-600 mb-12">Langzeitbeziehung – Review-Anfragen, Beschwerden, Wiederbuchung</p>
+        <p className="text-xl text-slate-600 mb-12">Langzeitbeziehung: Review-Anfrage, Wiederbuchung, Beschwerden</p>
 
         <section className="space-y-8">
           <div className="bg-white p-8 rounded-lg border border-slate-200">
@@ -63,7 +63,7 @@ Dein nächster Termin ist für [Datum/Zeit] frei – oder einen anderen Termin?`
           </div>
 
           <div className="bg-white p-8 rounded-lg border border-slate-200">
-            <h2 className="text-2xl font-bold text-slate-900 mb-4">Wiederbuchungs-Angebot</h2>
+            <h2 className="text-2xl font-bold text-slate-900 mb-4">Wiederbuchung</h2>
             <p className="text-slate-600 mb-6"><strong>Tone:</strong> Freundlich, nicht pushig.</p>
 
             <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded mb-6">
@@ -96,7 +96,7 @@ Sag uns Bescheid!`}
           </div>
 
           <div className="bg-white p-8 rounded-lg border border-slate-200">
-            <h2 className="text-2xl font-bold text-slate-900 mb-4">Beschwerde-Handling</h2>
+            <h2 className="text-2xl font-bold text-slate-900 mb-4">Beschwerden</h2>
             <p className="text-slate-600 mb-6"><strong>Tone:</strong> Ruhig, lösungsorientiert, professionell, empathisch.</p>
 
             {/* Good Example */}
