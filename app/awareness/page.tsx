@@ -38,7 +38,30 @@ export default function AwarenessPage() {
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Social Media Posts / Anzeigen</h2>
             <p className="text-slate-600 mb-6"><strong>Tone:</strong> Informativ, freundlich, klar – aber nicht zu locker.</p>
 
-            <div className="bg-white p-8 rounded-lg border border-slate-200 mb-8">
+            {/* Good Example */}
+            <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded mb-6">
+              <p className="text-sm font-bold text-green-900 mb-3">✓ Gutes Beispiel:</p>
+              <div className="bg-white p-4 rounded mb-4 font-mono text-sm">
+                <p>"Bella wurde gerade gepflegt – kein Stress, keine Angst. Einfach im Van, bei vertrauten Händen. Dein Hund bleibt zu Hause, du auch."</p>
+              </div>
+              <button
+                onClick={() => copyToClipboard("Bella wurde gerade gepflegt – kein Stress, keine Angst. Einfach im Van, bei vertrauten Händen. Dein Hund bleibt zu Hause, du auch.", "good-example")}
+                className="text-sm bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition"
+              >
+                {copied === "good-example" ? "✓ Kopiert!" : "Kopieren"}
+              </button>
+            </div>
+
+            {/* Bad Example */}
+            <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded mb-8">
+              <p className="text-sm font-bold text-red-900 mb-3">✗ Nicht so gut:</p>
+              <div className="bg-white p-4 rounded mb-4 font-mono text-sm">
+                <p>"Oh mein Gott, unser kleines Fellbaby sieht ja absolut PAWSOME aus! 😍 Schau dir diese Verwandlung an!"</p>
+              </div>
+              <p className="text-sm text-red-800">Problem: Babytalk, zu viele Emojis, zu übertrieben.</p>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg border border-slate-200">
               <h3 className="text-2xl font-bold text-slate-900 mb-6">Zusammenfassung</h3>
               <div className="grid grid-cols-2 gap-8">
                 <div>
@@ -60,29 +83,6 @@ export default function AwarenessPage() {
                   </ul>
                 </div>
               </div>
-            </div>
-
-            {/* Good Example */}
-            <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded mb-6">
-              <p className="text-sm font-bold text-green-900 mb-3">✓ Gutes Beispiel:</p>
-              <div className="bg-white p-4 rounded mb-4 font-mono text-sm">
-                <p>"Bella wurde gerade gepflegt – kein Stress, keine Angst. Einfach im Van, bei vertrauten Händen. Dein Hund bleibt zu Hause, du auch."</p>
-              </div>
-              <button
-                onClick={() => copyToClipboard("Bella wurde gerade gepflegt – kein Stress, keine Angst. Einfach im Van, bei vertrauten Händen. Dein Hund bleibt zu Hause, du auch.", "good-example")}
-                className="text-sm bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition"
-              >
-                {copied === "good-example" ? "✓ Kopiert!" : "Kopieren"}
-              </button>
-            </div>
-
-            {/* Bad Example */}
-            <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded">
-              <p className="text-sm font-bold text-red-900 mb-3">✗ Nicht so gut:</p>
-              <div className="bg-white p-4 rounded mb-4 font-mono text-sm">
-                <p>"Oh mein Gott, unser kleines Fellbaby sieht ja absolut PAWSOME aus! 😍 Schau dir diese Verwandlung an!"</p>
-              </div>
-              <p className="text-sm text-red-800">Problem: Babytalk, zu viele Emojis, zu übertrieben.</p>
             </div>
           </div>
         </section>
