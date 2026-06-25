@@ -126,6 +126,7 @@ export default function AwarenessPage() {
                     <li>• Keine Tier-Babytalk-Wörter</li>
                     <li>• Keine Emojis übertrieben nutzen</li>
                     <li>• Keine 10-Zeilen-Captions</li>
+                    <li>• Keine leeren Versprechungen oder Superlative</li>
                   </ul>
                 </div>
               </div>
