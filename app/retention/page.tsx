@@ -95,7 +95,7 @@ Sag uns Bescheid!`}
             </div>
           </div>
 
-          <div>
+          <div className="bg-white p-8 rounded-lg border border-slate-200">
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Beschwerde-Handling</h2>
             <p className="text-slate-600 mb-6"><strong>Tone:</strong> Ruhig, lösungsorientiert, professionell, empathisch.</p>
 
@@ -115,28 +115,26 @@ Sag uns Bescheid!`}
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-lg border border-slate-200">
-              <h3 className="text-2xl font-bold text-slate-900 mb-6">Zusammenfassung</h3>
-              <div className="grid grid-cols-2 gap-8">
-                <div>
-                  <h4 className="font-bold text-green-700 mb-4">✓ Do's</h4>
-                  <ul className="space-y-2 text-slate-600">
-                    <li>• Höre aktiv zu (fasse zusammen, was der Kunde sagt)</li>
-                    <li>• Entschuldige dich, wenn etwas nicht okay war</li>
-                    <li>• Biete eine konkrete Lösung</li>
-                    <li>• Folge auf – verspreche nicht und halte dann nicht</li>
-                  </ul>
-                </div>
+            <h3 className="text-2xl font-bold text-slate-900 mb-6">Zusammenfassung</h3>
+            <div className="grid grid-cols-2 gap-8">
+              <div>
+                <h4 className="font-bold text-green-700 mb-4">✓ Do's</h4>
+                <ul className="space-y-2 text-slate-600">
+                  <li>• Höre aktiv zu (fasse zusammen, was der Kunde sagt)</li>
+                  <li>• Entschuldige dich, wenn etwas nicht okay war</li>
+                  <li>• Biete eine konkrete Lösung</li>
+                  <li>• Folge auf – verspreche nicht und halte dann nicht</li>
+                </ul>
+              </div>
 
-                <div>
-                  <h4 className="font-bold text-red-700 mb-4">✗ Don'ts</h4>
-                  <ul className="space-y-2 text-slate-600">
-                    <li>• Sei nicht defensiv</li>
-                    <li>• Verteidge dich nicht</li>
-                    <li>• Mach keine leeren Versprechungen</li>
-                    <li>• Keine verzögerten Antworten</li>
-                  </ul>
-                </div>
+              <div>
+                <h4 className="font-bold text-red-700 mb-4">✗ Don'ts</h4>
+                <ul className="space-y-2 text-slate-600">
+                  <li>• Sei nicht defensiv</li>
+                  <li>• Verteidge dich nicht</li>
+                  <li>• Mach keine leeren Versprechungen</li>
+                  <li>• Keine verzögerten Antworten</li>
+                </ul>
               </div>
             </div>
           </div>
