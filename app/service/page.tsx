@@ -57,10 +57,11 @@ Wir kommen gerade raus.`}
             <div>
               <div className="relative w-full h-64 bg-slate-200 rounded overflow-hidden mb-3">
                 <Image
-                  src="https://images.unsplash.com/photo-1587300411107-a56baf9201ff?w=400&h=400&fit=crop"
+                  src="https://images.unsplash.com/photo-1600079810694-b5f68066d53f?w=500&h=400&fit=crop"
                   alt="Before grooming"
-                  fill
-                  className="object-cover"
+                  width={500}
+                  height={400}
+                  className="w-full h-full object-cover"
                 />
               </div>
               <p className="text-sm text-slate-600 text-center"><strong>Vorher</strong></p>
@@ -68,10 +69,11 @@ Wir kommen gerade raus.`}
             <div>
               <div className="relative w-full h-64 bg-slate-200 rounded overflow-hidden mb-3">
                 <Image
-                  src="https://images.unsplash.com/photo-1633722715463-d30628cff756?w=400&h=400&fit=crop"
+                  src="https://images.unsplash.com/photo-1633722716947-a7f3f90a1fbf?w=500&h=400&fit=crop"
                   alt="After grooming"
-                  fill
-                  className="object-cover"
+                  width={500}
+                  height={400}
+                  className="w-full h-full object-cover"
                 />
               </div>
               <p className="text-sm text-slate-600 text-center"><strong>Nachher</strong></p>
