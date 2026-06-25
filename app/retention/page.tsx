@@ -2,9 +2,29 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 import Navigation from "../components/Navigation";
 
 export default function RetentionPage() {
+  const [copied, setCopied] = useState<string | null>(null);
+
+  const copyToClipboard = (text: string, id: string) => {
+    navigator.clipboard.writeText(text);
+    setCopied(id);
+    setTimeout(() => setCopied(null), 2000);
+  };
+
+  const reviewTemplate = `Hi [Name],
+falls [Hundename] bei dir einen guten Eindruck hinterlassen hat,
+würde es uns freuen, wenn du eine kurze Review schreibst.
+Danke!
+
+[Link zu Google/Yelp/etc.]`;
+
+  const rebookingTemplate = `Hi [Name],
+wann können wir [Hundename] wieder sehen?
+Dein nächster Termin ist für [Datum/Zeit] frei – oder einen anderen Termin?`;
+
   return (
     <main className="min-h-screen bg-slate-50">
       <Navigation />
@@ -31,13 +51,14 @@ export default function RetentionPage() {
             <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
               <p className="text-sm font-bold text-blue-900 mb-3">⭐ Template:</p>
               <pre className="bg-white p-4 rounded font-mono text-sm overflow-x-auto whitespace-pre-wrap">
-{`Hi [Name],
-falls [Hundename] bei dir einen guten Eindruck hinterlassen hat,
-würde es uns freuen, wenn du eine kurze Review schreibst.
-Danke!
-
-[Link zu Google/Yelp/etc.]`}
+{reviewTemplate}
               </pre>
+              <button
+                onClick={() => copyToClipboard(reviewTemplate, "review-template")}
+                className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+              >
+                {copied === "review-template" ? "✓ Kopiert!" : "Template kopieren"}
+              </button>
             </div>
           </div>
 
@@ -82,10 +103,14 @@ Danke!
             <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded mb-6">
               <p className="text-sm font-bold text-blue-900 mb-3">📅 Template (etwas formeller):</p>
               <pre className="bg-white p-4 rounded font-mono text-sm overflow-x-auto whitespace-pre-wrap">
-{`Hi [Name],
-wann können wir [Hundename] wieder sehen?
-Dein nächster Termin ist für [Datum/Zeit] frei – oder einen anderen Termin?`}
+{rebookingTemplate}
               </pre>
+              <button
+                onClick={() => copyToClipboard(rebookingTemplate, "rebooking-template-formal")}
+                className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+              >
+                {copied === "rebooking-template-formal" ? "✓ Kopiert!" : "Template kopieren"}
+              </button>
             </div>
 
             <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
@@ -95,6 +120,12 @@ Dein nächster Termin ist für [Datum/Zeit] frei – oder einen anderen Termin?`
 [Hundename] ist fällig für Termin #2.
 Sag uns Bescheid!`}
               </pre>
+              <button
+                onClick={() => copyToClipboard("Hi [Name],\n[Hundename] ist fällig für Termin #2.\nSag uns Bescheid!", "rebooking-template-casual")}
+                className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+              >
+                {copied === "rebooking-template-casual" ? "✓ Kopiert!" : "Template kopieren"}
+              </button>
             </div>
           </div>
         </section>
