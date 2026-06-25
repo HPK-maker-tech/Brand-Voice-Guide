@@ -76,12 +76,35 @@ export default function AwarenessPage() {
             </div>
 
             {/* Bad Example 2 */}
-            <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded mb-8">
+            <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded mb-6">
               <p className="text-sm font-bold text-red-900 mb-3">✗ Nicht so gut:</p>
               <div className="bg-white p-4 rounded mb-4 font-mono text-sm">
                 <p>"RUFF CUTS IST DIE BESTE GROOMING-SERVICE IN DER REGION!!! Wir bieten PREMIUM-QUALITÄT zu UNSCHLAGBAREN PREISEN. Dein Hund wird SPEKTAKULÄR aussehen. Buche JETZT!!!"</p>
               </div>
               <p className="text-sm text-red-800">Problem: Alle Caps, zu viele Ausrufezeichen, zu pushy, nicht hilfreich.</p>
+            </div>
+
+            {/* Good Example 3 */}
+            <div className="bg-green-50 border-l-4 border-green-500 p-6 rounded mb-6">
+              <p className="text-sm font-bold text-green-900 mb-3">✓ Gutes Beispiel:</p>
+              <div className="bg-white p-4 rounded mb-4 font-mono text-sm">
+                <p>"Langhaar-Hunde brauchen regelmässige Pflege – das verhindert Verfilzungen und ist angenehmer für deinen Hund. Wir machen das in deiner Nähe."</p>
+              </div>
+              <button
+                onClick={() => copyToClipboard("Langhaar-Hunde brauchen regelmässige Pflege – das verhindert Verfilzungen und ist angenehmer für deinen Hund. Wir machen das in deiner Nähe.", "good-example-3")}
+                className="text-sm bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition"
+              >
+                {copied === "good-example-3" ? "✓ Kopiert!" : "Kopieren"}
+              </button>
+            </div>
+
+            {/* Bad Example 3 */}
+            <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded mb-8">
+              <p className="text-sm font-bold text-red-900 mb-3">✗ Nicht so gut:</p>
+              <div className="bg-white p-4 rounded mb-4 font-mono text-sm">
+                <p>"Dein Hund verdient eine verwöhnende Spa-Erfahrung mit unseren magischen Groomern. Unser revolutionäres System wird sein Leben verändern. Versprochen! 🧖‍♀️✨💅"</p>
+              </div>
+              <p className="text-sm text-red-800">Problem: Zu viele leere Versprechungen, Drama, zu viele Emojis, nicht sachlich.</p>
             </div>
 
             <div className="bg-white p-8 rounded-lg border border-slate-200">
