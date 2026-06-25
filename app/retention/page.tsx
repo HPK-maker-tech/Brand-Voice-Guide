@@ -63,6 +63,39 @@ Dein nächster Termin ist für [Datum/Zeit] frei – oder einen anderen Termin?`
           </div>
 
           <div className="bg-white p-8 rounded-lg border border-slate-200">
+            <h2 className="text-2xl font-bold text-slate-900 mb-4">Wiederbuchungs-Angebot</h2>
+            <p className="text-slate-600 mb-6"><strong>Tone:</strong> Freundlich, nicht pushig.</p>
+
+            <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded mb-6">
+              <p className="text-sm font-bold text-blue-900 mb-3">📅 Template (etwas formeller):</p>
+              <pre className="bg-white p-4 rounded font-mono text-sm overflow-x-auto whitespace-pre-wrap">
+{rebookingTemplate}
+              </pre>
+              <button
+                onClick={() => copyToClipboard(rebookingTemplate, "rebooking-template-formal")}
+                className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+              >
+                {copied === "rebooking-template-formal" ? "✓ Kopiert!" : "Template kopieren"}
+              </button>
+            </div>
+
+            <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
+              <p className="text-sm font-bold text-blue-900 mb-3">📅 Template (etwas lockerer):</p>
+              <pre className="bg-white p-4 rounded font-mono text-sm overflow-x-auto whitespace-pre-wrap">
+{`Hi [Name],
+[Hundename] ist fällig für Termin #2.
+Sag uns Bescheid!`}
+              </pre>
+              <button
+                onClick={() => copyToClipboard("Hi [Name],\n[Hundename] ist fällig für Termin #2.\nSag uns Bescheid!", "rebooking-template-casual")}
+                className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+              >
+                {copied === "rebooking-template-casual" ? "✓ Kopiert!" : "Template kopieren"}
+              </button>
+            </div>
+          </div>
+
+          <div className="bg-white p-8 rounded-lg border border-slate-200">
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Beschwerde-Handling</h2>
             <p className="text-slate-600 mb-6"><strong>Tone:</strong> Ruhig, lösungsorientiert, professionell, empathisch.</p>
 
@@ -93,39 +126,6 @@ Dein nächster Termin ist für [Datum/Zeit] frei – oder einen anderen Termin?`
               <p className="text-slate-700 text-sm">
                 "Das ist seltsam, normalerweise sind unsere Groomer sehr professionell. Vielleicht war dein Hund einfach nervös? Es gibt verschiedene Gründe, warum ein Hund angespannt sein kann..."
               </p>
-            </div>
-          </div>
-
-          <div className="bg-white p-8 rounded-lg border border-slate-200">
-            <h2 className="text-2xl font-bold text-slate-900 mb-4">Wiederbuchungs-Angebot</h2>
-            <p className="text-slate-600 mb-6"><strong>Tone:</strong> Freundlich, nicht pushig.</p>
-
-            <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded mb-6">
-              <p className="text-sm font-bold text-blue-900 mb-3">📅 Template (etwas formeller):</p>
-              <pre className="bg-white p-4 rounded font-mono text-sm overflow-x-auto whitespace-pre-wrap">
-{rebookingTemplate}
-              </pre>
-              <button
-                onClick={() => copyToClipboard(rebookingTemplate, "rebooking-template-formal")}
-                className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
-              >
-                {copied === "rebooking-template-formal" ? "✓ Kopiert!" : "Template kopieren"}
-              </button>
-            </div>
-
-            <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
-              <p className="text-sm font-bold text-blue-900 mb-3">📅 Template (etwas lockerer):</p>
-              <pre className="bg-white p-4 rounded font-mono text-sm overflow-x-auto whitespace-pre-wrap">
-{`Hi [Name],
-[Hundename] ist fällig für Termin #2.
-Sag uns Bescheid!`}
-              </pre>
-              <button
-                onClick={() => copyToClipboard("Hi [Name],\n[Hundename] ist fällig für Termin #2.\nSag uns Bescheid!", "rebooking-template-casual")}
-                className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
-              >
-                {copied === "rebooking-template-casual" ? "✓ Kopiert!" : "Template kopieren"}
-              </button>
             </div>
           </div>
         </section>
