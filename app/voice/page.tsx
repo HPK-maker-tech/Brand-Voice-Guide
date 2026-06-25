@@ -53,6 +53,10 @@ export default function VoicePage() {
               <p className="text-sm font-semibold text-green-900">✓ So klingt das:</p>
               <p className="text-slate-700">"Wir kommen zu dir nach Hause, weil wir sehen, wie viel Stress ein Besuch in der Klinik für Hunde bedeutet."</p>
             </div>
+            <div className="bg-red-50 border-l-4 border-red-500 p-4">
+              <p className="text-sm font-semibold text-red-900">✗ Nicht so:</p>
+              <p className="text-slate-700">"Wir haben die beste Grooming-Ausstattung auf dem Markt und sind absolut unglaublich. Vertrau uns einfach!"</p>
+            </div>
           </div>
 
           <div className="bg-white p-8 rounded-lg border border-slate-200">
@@ -61,6 +65,10 @@ export default function VoicePage() {
             <div className="bg-green-50 border-l-4 border-green-500 p-4 mb-4">
               <p className="text-sm font-semibold text-green-900">✓ So klingt das:</p>
               <p className="text-slate-700">"Dein Hund wird nach 2-3 Stunden fertig sein, je nach Felllänge."</p>
+            </div>
+            <div className="bg-red-50 border-l-4 border-red-500 p-4">
+              <p className="text-sm font-semibold text-red-900">✗ Nicht so:</p>
+              <p className="text-slate-700">"Wir sind die BESTEN Groomer in der Region! Dein Hund wird SPEKTAKULÄR aussehen! 🌟✨"</p>
             </div>
           </div>
 
@@ -81,12 +89,12 @@ export default function VoicePage() {
             <h3 className="text-xl font-bold text-slate-900 mb-4">5. Eine Voice, verschiedene Töne</h3>
             <p className="text-slate-600 mb-4">Wir klingen auf Social Media lockerer als in einer Beschwerde-Antwort. Aber es ist immer noch Ruff Cuts.</p>
             <div className="bg-green-50 border-l-4 border-green-500 p-4 mb-4">
-              <p className="text-sm font-semibold text-green-900">✓ Social Media (lockerer):</p>
-              <p className="text-slate-700">"Bella sieht nach ihrer Grooming immer aus wie neu. Schau selbst!"</p>
+              <p className="text-sm font-semibold text-green-900">✓ Richtig – gleiche Voice, angepasster Ton:</p>
+              <p className="text-slate-700"><strong>Social Media:</strong> "Bella sieht nach ihrer Grooming immer aus wie neu!"<br/><strong>Beschwerde:</strong> "Hi Sarah, danke dass du uns bescheid sagst. Wir möchten es nächste Mal besser machen."</p>
             </div>
-            <div className="bg-green-50 border-l-4 border-green-500 p-4">
-              <p className="text-sm font-semibold text-green-900">✓ Beschwerde (professioneller):</p>
-              <p className="text-slate-700">"Hi Sarah, danke dass du uns bescheid sagst. Wenn Max nicht ganz entspannt war, möchten wir das nächste Mal besser machen."</p>
+            <div className="bg-red-50 border-l-4 border-red-500 p-4">
+              <p className="text-sm font-semibold text-red-900">✗ Falsch – komplett andere Voice:</p>
+              <p className="text-slate-700"><strong>Social Media:</strong> "Bella ist unser Fellbaby-Prinzessin! 👑✨"<br/><strong>Beschwerde:</strong> "Wir können nichts dafür, dass dein Hund nervös war."</p>
             </div>
           </div>
         </section>
