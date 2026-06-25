@@ -126,6 +126,7 @@ export default function ConsiderationPage() {
                     <li>• Keine langen, schwammigen Antworten</li>
                     <li>• Keine technischen Begriffe ohne Erklärung</li>
                     <li>• Keine verzögerten Antworten</li>
+                    <li>• Nicht abweisend oder unhilfreich wirken</li>
                   </ul>
                 </div>
               </div>
