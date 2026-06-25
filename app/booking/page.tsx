@@ -35,6 +35,21 @@ Freuen wir uns auf deinen [Hundename]!
 
 Ruff Cuts Team`;
 
+  const processTemplate = `Das läuft bei uns ab:
+
+1. Wir schreiben dir 30 Min. vorher
+2. Wir fahren vor dein Haus (Van mit Ruff Cuts Logo)
+3. Wir groomen deinen Hund im Van (ca. [Zeit])
+4. Dein Hund kommt frisch und sauber raus
+5. Wir schreiben dir "Fertig!" – du holst den Hund ab
+   oder wir bringen ihn rein
+6. Du bezahlst, wir fahren weiter
+
+Keine Wartezeit. Dein Hund bleibt in der gewohnten Umgebung.
+Keine Stress. Dein Tag läuft normal weiter.
+
+Fragen? Ruf uns an oder schreib zurück.`;
+
   return (
     <main className="min-h-screen bg-slate-50">
       <Navigation />
@@ -82,21 +97,14 @@ Ruff Cuts Team`;
             <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded">
               <p className="text-sm font-bold text-blue-900 mb-3">📋 Template (Email oder Telefon):</p>
               <pre className="bg-white p-4 rounded mb-4 font-mono text-sm overflow-x-auto whitespace-pre-wrap">
-{`Das läuft bei uns ab:
-
-1. Wir schreiben dir 30 Min. vorher
-2. Wir fahren vor dein Haus (Van mit Ruff Cuts Logo)
-3. Wir groomen deinen Hund im Van (ca. [Zeit])
-4. Dein Hund kommt frisch und sauber raus
-5. Wir schreiben dir "Fertig!" – du holst den Hund ab
-   oder wir bringen ihn rein
-6. Du bezahlst, wir fahren weiter
-
-Keine Wartezeit. Dein Hund bleibt in der gewohnten Umgebung.
-Keine Stress. Dein Tag läuft normal weiter.
-
-Fragen? Ruf uns an oder schreib zurück.`}
+{processTemplate}
               </pre>
+              <button
+                onClick={() => copyToClipboard(processTemplate, "process-template")}
+                className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+              >
+                {copied === "process-template" ? "✓ Kopiert!" : "Template kopieren"}
+              </button>
             </div>
           </div>
         </section>
