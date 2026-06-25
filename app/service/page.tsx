@@ -52,6 +52,44 @@ Wir kommen gerade raus.`}
           <h2 className="text-2xl font-bold text-slate-900 mb-4">Fotos & Vorher-Nachher</h2>
           <p className="text-slate-600 mb-6"><strong>Tone:</strong> Fröhlich, aber nicht übertrieben. Zeige das Ergebnis, nicht dein Gefühl.</p>
 
+          {/* Before/After Images */}
+          <div className="grid grid-cols-2 gap-6 mb-8">
+            <div>
+              <div className="relative w-full h-64 bg-slate-200 rounded overflow-hidden mb-3">
+                <Image
+                  src="https://images.unsplash.com/photo-1633722715463-d30628cff756?w=400&h=400&fit=crop"
+                  alt="Before grooming"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <p className="text-sm text-slate-600 text-center"><strong>Vorher</strong></p>
+            </div>
+            <div>
+              <div className="relative w-full h-64 bg-slate-200 rounded overflow-hidden mb-3">
+                <Image
+                  src="https://images.unsplash.com/photo-1570129477992-45a003cdd3d1?w=400&h=400&fit=crop"
+                  alt="After grooming"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <p className="text-sm text-slate-600 text-center"><strong>Nachher</strong></p>
+            </div>
+          </div>
+
+          {/* Good Caption Example */}
+          <div className="bg-green-50 border-l-4 border-green-500 p-4 rounded mb-6">
+            <p className="font-bold text-green-900 mb-2">✓ Gute Caption:</p>
+            <p className="text-slate-700 text-sm italic">"Vorher/Nachher – Max. Von verfilzt zu flauschig! 🐕"</p>
+          </div>
+
+          {/* Bad Caption Example */}
+          <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded mb-6">
+            <p className="font-bold text-red-900 mb-2">✗ Nicht so gut:</p>
+            <p className="text-slate-700 text-sm italic">"OH MEIN GOTT!!! Die BESTE Grooming EVER!!! 🐶✨💅😍🎉 SCHAU DIR DAS AN!!! Unser MAGISCHES Team hat es WIEDER getan!!! 🌟🌟🌟"</p>
+          </div>
+
           <h3 className="font-bold text-slate-900 mb-3">Do's</h3>
           <ul className="space-y-2 text-slate-600 mb-6">
             <li>✓ Gute Lichtverhältnisse</li>
